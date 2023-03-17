@@ -1,14 +1,14 @@
 const playersList = document.querySelector('.list-players');
 
 const Players = class {
-  constructor(playerName, playerScore) {
-    this.playerName = playerName;
-    this.playerScore = playerScore;
+  constructor(user, score) {
+    this.user = user;
+    this.score = score;
     this.players = [];
   }
 
   populateFields = () => {
-    localStorage.setItem('PlayersDB', JSON.stringify(this.players));
+    // localStorage.setItem('PlayersDB', JSON.stringify(this.players));
   };
 
   showPlayers = () => {
@@ -18,7 +18,7 @@ const Players = class {
         const row = document.createElement('tr');
         const rowData = document.createElement('td');
 
-        rowData.textContent = `${player.playerName}: ${player.playerScore}`;
+        rowData.textContent = `${player.user}: ${player.score}`;
 
         row.classList.add('player-container');
         row.appendChild(rowData);
@@ -38,14 +38,14 @@ const Players = class {
 
   addPlayer = (player) => {
     this.players.push(player);
-    this.populateFields();
-    this.showPlayers();
+    // this.populateFields();
+    // this.showPlayers();
   }
 
   removePlayer(player) {
     const result = this.players.filter((b) => b !== player);
     this.players = result;
-    this.populateFields();
+    // this.populateFields();
   }
 };
 
