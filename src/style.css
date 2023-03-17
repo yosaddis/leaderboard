@@ -10,7 +10,9 @@ body {
   margin: 0;
   font-family: 'Comic Sans MS', sans-serif;
   box-sizing: border-box;
-  color: #333;
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.644782913165266) 44%, rgba(0, 212, 255, 1) 100%);
 }
 
 ul {
@@ -32,12 +34,6 @@ header {
   margin: 1em;
 }
 
-section {
-  width: 45%;
-  min-width: 14rem;
-  margin: 0;
-}
-
 li {
   display: flex;
   justify-content: flex-end;
@@ -48,12 +44,41 @@ li {
 input {
   padding: 0.3rem;
   width: 100%;
-  border: 0.125rem #333 solid;
+  border: 0.125rem #fff solid;
   border-radius: 0.25rem;
 }
 
+button {
+  background: #616161;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .main-title {
-  font-size: 5em;
+  font-size: 3.5em;
+}
+
+h1::after {
+  content: '';
+  height: 4px;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 20px;
+  z-index: 0;
+  background: #00d4ff;
+  border-radius: 8px;
+}
+
+#icon {
+  font-size: 24px;
+  color: white;
 }
 
 .sub-title {
@@ -68,11 +93,15 @@ table {
 }
 
 tr:nth-child(even) {
-  background-color: lightgray;
+  background-color: #00d4ff;
+}
+
+td {
+  word-break: break-all;
 }
 
 .list-players {
-  border: 0.125rem solid #333;
+  border: 0.125rem solid #fff;
   border-radius: 0.25rem;
   max-width: 32rem;
   margin: 0 auto;
@@ -94,8 +123,8 @@ tr:nth-child(even) {
 footer {
   display: flex;
   align-self: flex-end;
-  border: 2px #333 solid;
-  background-color: gray;
+  border: 2px #fff solid;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   max-width: 90%;
   margin: 0 auto;
@@ -104,4 +133,33 @@ footer {
 
 .hidden {
   display: none;
+}
+
+.score-list,
+.score-form {
+  width: 45%;
+  flex-direction: row;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    background: rgb(2, 0, 36);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .score-list,
+  .score-form {
+    width: 90%;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
 }
