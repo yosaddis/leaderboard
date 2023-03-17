@@ -32,6 +32,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 - [ ] Write plain HTML markup with minimum styling (just to make the layout) using the wireframe given.
 - [ ] Added a feature for sending and receiving data from/to the Leaderboard API.
+- [ ] Added a styling for better look and feel.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -52,6 +53,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 - [x] Use ES6 modules, with import and export.
 - [x] Add API calls to the project.
+- [x] Modify the look of the page while keeping the given wireframe.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -96,7 +98,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add more styling to the page.
+- [ ] Add pagination to the list of scores.
 
 
 ## 🤝 Contributing <a name="contributing"></a>
