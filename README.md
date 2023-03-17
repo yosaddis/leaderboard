@@ -31,6 +31,7 @@ The leaderboard website displays scores submitted by different players. It also 
 ### Project Objectives <a name="project-objectives"></a>
 
 - [ ] Write plain HTML markup with minimum styling (just to make the layout) using the wireframe given.
+- [ ] Added a feature for sending and receiving data from/to the Leaderboard API.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -50,6 +51,7 @@ The leaderboard website displays scores submitted by different players. It also 
 ### Key Features <a name="key-features"></a>
 
 - [x] Use ES6 modules, with import and export.
+- [x] Add API calls to the project.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -94,7 +96,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add API calls to the project.
 - [ ] Add more styling to the page.
 
 
