@@ -14,6 +14,7 @@ const Players = class {
   showPlayers = () => {
     playersList.innerHTML = '';
     if (this.players.length > 0) {
+      this.players = this.players.sort((a, b) => a.score - b.score);
       this.players.map((player) => {
         const row = document.createElement('tr');
         const rowData = document.createElement('td');
